@@ -1,22 +1,16 @@
 import React, { useState, useEffect } from 'react';
-//import SearchResults from './SearchResults';
 
 function Images() {
-  const searchParams = {
-    key: process.env.MARS_ROVER_EXPLORER_NASA_KEY,
-
-    api: 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'
-  };
-
-  const [nasaImages, setImages] = useState([]);
+  const [nasaImage, setImage] = useState([]);
 
   function getImages() {
-    const url = `${searchParams.api}`;
-
+    const key = process.env.NASA_KEY;
+    const url = `https://api.nasa.gov/planetary/apod?api_key=${key}`;
+    console.log({ key });
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        setImages(data);
+        setImage(data);
       })
       .catch(console.error);
   }
@@ -27,8 +21,8 @@ function Images() {
 
   return (
     <div>
-      <p>{nasaImages.explanation}</p>
-      <img src={nasaImages.hdurl} alt="" />
+      <p>{nasaImage.explanation}</p>
+      <img src={nasaImage.hdurl} alt="" />
     </div>
   );
 }
