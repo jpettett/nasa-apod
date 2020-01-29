@@ -68,3 +68,14 @@ h1 {
   float: right;
   border-radius: 50%;
 }
+
+.apod {
+  margin-left: 250px;
+  height: 500px;
+  width: 500px;
+}
+
+/* .searchImage {
+  height: 500px;
+  width: 500px;
+} */
