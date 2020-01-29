@@ -1,30 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet');
+
+html {
+  max-width: 1400px;
+}
+
 body {
   margin: 0;
   background-color: rgb(0, 0, 0);
   color: whitesmoke;
   display: flex;
   flex-direction: column;
-  font-family: Helvetica;
+  font-family: 'Muli', sans-serif;
 }
 
 input {
+  margin-top: 5px;
   border: 2px solid rgb(122, 115, 115);
   border-radius: 4px;
   font-size: 12px;
+  outline: none;
 }
 
 button {
+  margin-top: 5px;
   font-size: 12px;
   border: 2px solid rgb(122, 115, 115);
   border-radius: 4px;
   margin-left: 3px;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(143, 143, 179);
+  color: white;
 }
 
 form {
   display: inline-block;
 }
 
-p {
+p,
+h2 {
+  font-family: 'Abel', sans-serif;
   color: rgb(218, 207, 207);
 }
 
@@ -33,17 +50,19 @@ p {
   font-weight: 600;
   color: rgb(218, 207, 207);
   display: inline-flex;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  margin-right: 20px;
+  padding: 20px;
   font-size: large;
   text-decoration: none;
 }
 
 .links:hover {
-  color: rgb(201, 144, 31);
+  background-color: rgba(204, 38, 38, 0.678);
+  color: rgb(255, 255, 255);
 }
 
 .navBar {
+  margin: 0;
   background-color: rgb(37, 37, 37);
   border-bottom: 2px solid rgba(245, 245, 245, 0.5);
 }
@@ -54,6 +73,11 @@ h1 {
   margin-bottom: 10px;
   margin-top: 0px;
   padding-top: 20px;
+}
+
+.planets {
+  width: 1400px;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.5);
 }
 
 .nasa {
@@ -75,7 +99,51 @@ h1 {
   width: 500px;
 }
 
-/* .searchImage {
+.searchResults {
+  display: inline-block;
+}
+
+.searchImage {
   height: 500px;
   width: 500px;
-} */
+  margin-left: 270px;
+}
+
+.roverCred {
+  font-size: xx-small;
+  justify-content: flex-start;
+}
+
+/*  MEDIA QUERIES  */
+
+@media (max-width: 700px) {
+  body,
+  p {
+    justify-content: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  h1,
+  nav {
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 800px) {
+  .rover,
+  .apod,
+  .searchImage {
+    height: 400px;
+    width: 400px;
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  .planets {
+    height: 300px;
+    width: 700px;
+  }
+}

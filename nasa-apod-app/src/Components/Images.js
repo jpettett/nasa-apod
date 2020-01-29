@@ -21,6 +21,8 @@ function Images() {
 
   return (
     <div>
+      <h2>{nasaImage.title}</h2>
+      <p>{nasaImage.date}</p>
       <p>{nasaImage.explanation}</p>
       <img className="apod" src={nasaImage.hdurl} alt="" />
     </div>

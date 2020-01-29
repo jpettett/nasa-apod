@@ -1,6 +1,4 @@
 import React from 'react';
-//import { Link, Route } from 'react-router-dom';
-//import SearchResults from './SearchResults';
 
 function SearchForm(props) {
   return (
@@ -19,7 +17,6 @@ function SearchForm(props) {
           Search
         </button>
       </form>
-      {/* <Route path="/search" component={SearchResults} /> */}
     </div>
   );
 }
