@@ -57,7 +57,7 @@ h2 {
 }
 
 .links:hover {
-  background-color: rgba(204, 38, 38, 0.678);
+  background-color: rgba(94, 92, 92, 0.678);
   color: rgb(255, 255, 255);
 }
 
@@ -135,9 +135,9 @@ h1 {
   .rover,
   .apod,
   .searchImage {
-    height: 400px;
-    width: 400px;
-    margin-left: 45px;
+    height: 300px;
+    width: 300px;
+    margin-left: 5px;
   }
 }
 
@@ -145,5 +145,12 @@ h1 {
   .planets {
     height: 300px;
     width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .links {
+    margin-right: 5px;
+    padding: 5px;
   }
 }
