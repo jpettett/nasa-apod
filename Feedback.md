@@ -27,6 +27,7 @@ Criteria: How does the project stack up to the requirements for this project? Is
 -   Great job using React Router for programmatic navigation through the app.
 -   Uses a third-party API with a correctly-secured API key.
 -   Successfully deployed to Heroku.
+-   Nice work on having frequent commits spanning the entirety of our project. Commit messages are descriptive (however, they should start with a verb, be in present tense, and preferably only include one change at a time, e.g., "update styling," "add api call," etc., so that they read consistently).
 
 ### Areas for Growth:
 
