@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet');
 
-html {
-  max-width: 1400px;
-}
-
 body {
   margin: 0;
   background-color: rgb(0, 0, 0);
@@ -76,7 +72,9 @@ h1 {
 }
 
 .planets {
-  width: 1400px;
+  max-width: 100%;
+  height: auo;
+  /* width: 1400px; */
   border-bottom: 1px solid rgba(245, 245, 245, 0.5);
 }
 
@@ -115,6 +113,11 @@ h1 {
 }
 
 /*  MEDIA QUERIES  */
+@media (min-width: 1300px) {
+  .planets {
+    border-bottom: none;
+  }
+}
 
 @media (max-width: 700px) {
   body,
@@ -137,7 +140,7 @@ h1 {
   .searchImage {
     height: 300px;
     width: 300px;
-    margin-left: 5px;
+    margin-left: 100px;
   }
 }
 
@@ -150,7 +153,6 @@ h1 {
 
 @media (max-width: 700px) {
   .links {
-    margin-right: 5px;
-    padding: 5px;
+    display: block;
   }
 }

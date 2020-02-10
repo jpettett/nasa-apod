@@ -20,7 +20,7 @@ function Images() {
   }, []);
 
   return (
-    <div>
+    <div className="images">
       <h2>{nasaImage.title}</h2>
       <p>{nasaImage.date}</p>
       <p>{nasaImage.explanation}</p>
