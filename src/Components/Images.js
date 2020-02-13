@@ -12,7 +12,15 @@ function Images() {
       .then(data => {
         setImage(data);
       })
-      .catch(console.error);
+      // catch and display error message //
+      .catch(() => {
+        console.error();
+        setImage({
+          title: 'Oops, looks like we failed to launch!',
+          hdurl:
+            'https://apod.nasa.gov/apod/image/1607/Falcon9SeeleyIMG_9801_1024c.jpg'
+        });
+      });
   }
 
   useEffect(() => {

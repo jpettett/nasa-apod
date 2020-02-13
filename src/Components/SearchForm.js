@@ -13,7 +13,7 @@ function SearchForm(props) {
           name="searchString"
         />
 
-        <button className="form" type="submit">
+        <button className="button" type="submit">
           Search
         </button>
       </form>
