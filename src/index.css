@@ -74,7 +74,7 @@ h1 {
 
 .planets {
   max-width: 100%;
-  height: auo;
+  height: auto;
   /* width: 1400px; */
   border-bottom: 1px solid rgba(245, 245, 245, 0.5);
 }
