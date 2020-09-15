@@ -8,6 +8,9 @@ import './nav.styles.scss'
 function Nav() {
     return (
       <div className="nav">
+        <Link className="links" to="/images">
+          Today
+        </Link>
         <Link className="links" to="/about">
           About
         </Link>

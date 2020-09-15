@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
+
+import Nav from '../Nav/Nav.component'
 import SearchForm from '../Search-Form/SearchForm.component'
+
+import './search-results.styles.scss'
 
 function SearchResults() {
   // object for search parameters //
@@ -38,7 +42,9 @@ function SearchResults() {
     fetchData(searchString);
   }
   return (
-    <div className="searchResults">
+    <div>
+      <Nav />
+    <div className="search-results">
       <p className="instrucitons">
         Please Enter a Date in the YYYY-MM-DD format.
       </p>
@@ -51,7 +57,8 @@ function SearchResults() {
       <h2>{image.title}</h2>
       <p>{image.date}</p>
       <p>{image.explanation}</p>
-      <img className="searchImage" src={image.hdurl} alt="" />
+      <img className="search-image" src={image.hdurl} alt="" />
+    </div>
     </div>
   );
 }

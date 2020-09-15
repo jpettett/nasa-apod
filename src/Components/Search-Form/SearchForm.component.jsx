@@ -1,10 +1,12 @@
 import React from 'react';
 
+import './search-form.styles.scss'
+
 function SearchForm(props) {
   return (
     <div>
       <form onSubmit={props.handleSubmit}>
-        <input
+        <input 
           onChange={props.handleChange}
           value={props.searchString}
           className="form"
