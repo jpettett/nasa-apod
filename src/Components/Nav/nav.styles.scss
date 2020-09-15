@@ -1,0 +1,18 @@
+.nav {
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ .links {
+    padding: 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+    
+}

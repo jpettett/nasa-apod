@@ -1,0 +1,40 @@
+.about-header {
+    text-align: center;
+    background-image: url('../../Images/satellite.jpg');
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay-div {
+    background-color: rgba(33, 33, 33, 0.269);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fa-icon {
+    margin-top: 500px;
+    margin-right: 18px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+
+.satellite-img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+}
+
+.about-page {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
