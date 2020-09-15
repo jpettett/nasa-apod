@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 
+import Nav from '../Nav/Nav.component'
+
+import './image.styles.scss'
+
 function Images() {
   const [nasaImage, setImage] = useState([]);
 
@@ -28,11 +32,14 @@ function Images() {
   }, []);
 
   return (
+    <div>
+      <Nav />
     <div className="images">
-      <h2>{nasaImage.title}</h2>
-      <p>{nasaImage.date}</p>
-      <p>{nasaImage.explanation}</p>
+      <h2 className="title">{nasaImage.title}</h2>
+      <p className="date">{nasaImage.date}</p>
       <img className="apod" src={nasaImage.hdurl} alt="" />
+      <p className="info">{nasaImage.explanation}</p>
+    </div>
     </div>
   );
 }

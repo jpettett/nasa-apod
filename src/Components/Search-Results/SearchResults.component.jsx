@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import SearchForm from '../Search-Form/SearchForm.component';
+import SearchForm from '../Search-Form/SearchForm.component'
 
 function SearchResults() {
   // object for search parameters //
